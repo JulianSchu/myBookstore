@@ -47,8 +47,7 @@
             <div v-for="(book, index) in filteredBooks">
                 <div class="card border-0">
                     <img class="front w-100 h-auto" :src="book.portada" alt="book.jpg">
-                    <div class="back backside">
-                    <div class="w-100 p-2 text-center d-flex flex-wrap align-content-between">
+                    <div class="back w-100 p-2 text-center d-flex flex-wrap align-content-between">
                         <div class="w-100 align-items-center">
                             <p class="font-weight-bold">{{book.titulo}}</p>
                         </div>
@@ -61,7 +60,6 @@
                             <button type="button" class="btn btn-secondary py-1" data-toggle="modal" data-target="#secBookPic">More</button>
                         </a>
                         </div>
-                    </div>
                     </div>
                 </div>
             </div>
